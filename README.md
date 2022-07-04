@@ -34,3 +34,23 @@ class Person {
 
 Person "0..*" --> "0..1" Document 
 ```
+
+Database schema:
+
+```mermaid
+classDiagram
+direction LR
+
+class document {
+   varchar document_code
+   bigint document_id
+}
+
+class person {
+   varchar person_name
+   bigint document_id
+   bigint person_id
+}
+
+person  -->  document : document_id
+```
