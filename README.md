@@ -21,7 +21,7 @@ Entity Relationship Model:
 
 ```mermaid
 classDiagram
-direction BT
+direction LR
 
 class Document {
     Long  id
